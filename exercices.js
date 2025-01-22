@@ -1,6 +1,6 @@
 const nom_boutique = "SORCIER";
 
-let quantite_potions = 15;
+let quantite_potions = 30;
 let prix_potion = 2;
 let boutique_ouvert = true;
 
@@ -44,3 +44,11 @@ switch (choix) {
     );
     break;
 }
+let nombre_potions = parseInt(
+  prompt("Quelle quantité de potion de soin vous voulez")
+);
+let prix_total = nombre_potions * prix_potion;
+
+console.log(
+  `Prix de potions de soins ${prix_potion} : Prix total est ${prix_total} 🪙 mon cher Aventurier. 💸`
+);
